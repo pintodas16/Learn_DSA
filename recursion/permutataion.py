@@ -16,5 +16,5 @@ ans = []
 string = []
 string = list(str)
 per(0,string, ans )
-print(ans)
+
         
