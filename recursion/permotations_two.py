@@ -5,12 +5,12 @@ def is_check_present(arr,start,curr):
     return True
 
 def permu(arr,pos,ans):
-    length = len(arr)
-    if pos == length:
+    
+    if pos == len(arr):
         # print(arr)
         ans.append(arr[:])
         return 
-    for i in range(pos,length):
+    for i in range(pos,len(arr)):
         if is_check_present(arr,pos,i):
             arr[i],arr[pos] = arr[pos],arr[i]
             permu(arr,pos+1,ans)
