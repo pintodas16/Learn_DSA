@@ -9,6 +9,7 @@ def permu(arr,pos,ans):
     if pos == len(arr):
         # print(arr)
         ans.append(arr[:])
+        
         return 
     for i in range(pos,len(arr)):
         if is_check_present(arr,pos,i):
