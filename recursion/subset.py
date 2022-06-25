@@ -4,11 +4,12 @@ def helper(arr, subset , ans , i ):
     if i == len(arr):
         ans.append(subset[:])
         return 
-    
+    # take the element 
     subset.append(arr[i])
     helper(arr, subset, ans , i+1)
     
-    subset.pop()
+    subset.pop()   #backtracking 
+    # skip the element 
     helper(arr, subset, ans , i+1)
     
 

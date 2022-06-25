@@ -10,7 +10,7 @@ def helper(arr, subset, ans, i ):
     subset.pop()
     # print(i,len(arr))
     # skip the element 
-    while (i+1)<len(arr) & arr[i] == arr[i+1]:
+    while ((i+1)<len(arr) and arr[i] == arr[i+1]):
         i+=1
         
     helper(arr,subset,ans, i+1)
